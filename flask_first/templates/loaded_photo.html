@@ -1,0 +1,19 @@
+{% extends "index_.html" %}
+
+
+{% block content %}
+<h1>Загрузка фотографии</h1>
+<h2>для участия в миссии</h2>
+<div>
+    <form class="login_form" method="post" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="photo">Приложите фотографию</label>
+            <input type="file" class="form-control-file" id="photo" name="file">
+        </div>
+        <br>
+        <img src=/static/img/im.jpeg alt="Загрузите вашу фотографию!">
+        <br>
+        <button type="submit" class="btn btn-primary">Отправить</button>
+    </form>
+</div>
+{% endblock %}
