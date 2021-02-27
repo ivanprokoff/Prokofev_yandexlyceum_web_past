@@ -227,5 +227,10 @@ def load_photo():
         return render_template('loaded_photo.html', title='Ваше фото', photo='img/im.jpeg')
 
 
+@app.route('/carousel')
+def carousel():
+    return render_template('carousel.html', title='Пейзажи Марса')
+
+
 if __name__ == '__main__':
     app.run(port=8080, host='127.0.0.1')
